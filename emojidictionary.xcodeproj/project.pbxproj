@@ -14,6 +14,7 @@
 		FDE7DCB21F6360330016BFD9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE7DCB01F6360330016BFD9 /* LaunchScreen.xib */; };
 		FDE7DCBE1F6360330016BFD9 /* emojidictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE7DCBD1F6360330016BFD9 /* emojidictionaryTests.swift */; };
 		FDE7DCC81F636C810016BFD9 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE7DCC71F636C810016BFD9 /* DefinitionViewController.swift */; };
+		FDE7DCCA1F65CB310016BFD9 /* Emojiclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE7DCC91F65CB310016BFD9 /* Emojiclass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		FDE7DCBC1F6360330016BFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDE7DCBD1F6360330016BFD9 /* emojidictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojidictionaryTests.swift; sourceTree = "<group>"; };
 		FDE7DCC71F636C810016BFD9 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		FDE7DCC91F65CB310016BFD9 /* Emojiclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emojiclass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				FDE7DCA91F6360330016BFD9 /* ViewController.swift */,
 				FDE7DCC71F636C810016BFD9 /* DefinitionViewController.swift */,
 				FDE7DCAB1F6360330016BFD9 /* Main.storyboard */,
+				FDE7DCC91F65CB310016BFD9 /* Emojiclass.swift */,
 				FDE7DCAE1F6360330016BFD9 /* Images.xcassets */,
 				FDE7DCB01F6360330016BFD9 /* LaunchScreen.xib */,
 				FDE7DCA51F6360330016BFD9 /* Supporting Files */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDE7DCAA1F6360330016BFD9 /* ViewController.swift in Sources */,
+				FDE7DCCA1F65CB310016BFD9 /* Emojiclass.swift in Sources */,
 				FDE7DCC81F636C810016BFD9 /* DefinitionViewController.swift in Sources */,
 				FDE7DCA81F6360330016BFD9 /* AppDelegate.swift in Sources */,
 			);

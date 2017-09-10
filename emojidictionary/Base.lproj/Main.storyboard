@@ -51,15 +51,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌲" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ri-Kz-MGC">
+                                <rect key="frame" x="196" y="104" width="209" height="249.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="209"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a tree" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVk-ai-BPY">
                                 <rect key="frame" x="251" y="383" width="97" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌲" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ri-Kz-MGC">
-                                <rect key="frame" x="196" y="104" width="209" height="249.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="209"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="png-qp-sa2">
+                                <rect key="frame" x="272" y="441" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Category: Symbol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfm-uU-dhf">
+                                <rect key="frame" x="272" y="441" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Birthyear: 2007" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEe-Lm-Xf6">
+                                <rect key="frame" x="283" y="514" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -67,12 +85,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="0Ri-Kz-MGC" secondAttribute="centerX" id="Egy-b3-4gQ"/>
+                            <constraint firstItem="Rfm-uU-dhf" firstAttribute="top" secondItem="TVk-ai-BPY" secondAttribute="bottom" constant="10" id="alw-cB-eXe"/>
+                            <constraint firstAttribute="centerX" secondItem="Rfm-uU-dhf" secondAttribute="centerX" id="fBK-xS-7tp"/>
                             <constraint firstItem="0Ri-Kz-MGC" firstAttribute="top" secondItem="ohd-7R-Re2" secondAttribute="bottom" constant="40" id="fce-nw-Kaw"/>
                             <constraint firstAttribute="centerX" secondItem="TVk-ai-BPY" secondAttribute="centerX" id="kha-dE-Oad"/>
+                            <constraint firstAttribute="centerX" secondItem="gEe-Lm-Xf6" secondAttribute="centerX" id="os8-1Y-zBJ"/>
+                            <constraint firstItem="gEe-Lm-Xf6" firstAttribute="top" secondItem="Rfm-uU-dhf" secondAttribute="bottom" constant="10" id="rOG-Kv-tZg"/>
                             <constraint firstItem="TVk-ai-BPY" firstAttribute="top" secondItem="0Ri-Kz-MGC" secondAttribute="bottom" constant="30" id="x1Q-ob-10M"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="gEe-Lm-Xf6" id="bAU-zf-5ux"/>
+                        <outlet property="categoryLabel" destination="Rfm-uU-dhf" id="Beu-E6-FRt"/>
                         <outlet property="definitionLabel" destination="TVk-ai-BPY" id="mQG-Sd-4hs"/>
                         <outlet property="emojiLabel" destination="0Ri-Kz-MGC" id="LNg-gz-WSc"/>
                     </connections>
